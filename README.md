@@ -53,7 +53,7 @@ Press `q` or `Ctrl+C` to abort at any time. When all packages are resolved, the 
 
 The idea for `gopacgo` came from a real workflow problem: manually browsing the AUR website to check for package updates on a minimal Arch Linux installation that doesn't use an AUR helper. The core logic — running `pacman -Qm` to list foreign packages and querying the AUR RPC API to fetch latest versions — was designed and implemented by me.
 
-The terminal UI was built with assistance from [Claude](https://claude.ai) (Anthropic), using [Bubble Tea](https://github.com/charmbracelet/bubbletea) and [Lip Gloss](https://github.com/charmbracelet/lipgloss) from the [Charm](https://charm.sh) ecosystem.
+The terminal UI was built with assistance from [Claude](https://claude.ai) (Anthropic), using [Bubble Tea](https://github.com/charmbracelet/bubbletea) and [Lip Gloss](https://github.com/charmbracelet/lipgloss) from the [Charm](https://charm.sh) ecosystem. The per-package reveal animation uses a random delay of up to five seconds — not because the lookup takes that long (the AUR API responds instantly in a single batch call), but because watching results appear one by one feels more satisfying than a sudden complete render.
 
 ## License
 
